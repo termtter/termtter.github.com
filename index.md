@@ -1,3 +1,8 @@
+---
+layout: default
+title: Termtter -Top-
+---
+
 Home
 
 Termtter is a Terminal based Twitter client.
