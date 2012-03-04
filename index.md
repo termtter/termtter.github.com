@@ -7,19 +7,19 @@ title: Termtter -Top-
 
 Termtter is a Terminal based Twitter client.
 
-Get Started
+## Get Started
 
-## Install:
+### Install:
 
     % gem install termtter
 
-## Run:
+### Run:
 
     % termtter
 
 ## Screenshots
 
-
+todo.
 
 ## Documentation
 
