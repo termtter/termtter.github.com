@@ -5,7 +5,7 @@ title: Termtter -Top-
 
 # Home
 
-Termtter is a Terminal based Twitter client.
+Termtter is a terminal-based Twitter client.
 
 ## Get Started
 
