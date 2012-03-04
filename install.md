@@ -37,7 +37,7 @@ You can get the latest version (not stable) from GitHub.
 
     % git clone git://github.com/termtter/termtter.git
 
-Execute latest version use ./bin/termtter:
+To execute the latest version, use ./bin/termtter:
 
     % cd termtter
     % ./bin/termtter
