@@ -8,4 +8,9 @@ title: Termtter -About-
 Termtter is a Terminal based Twitter client.
 It is written by Ruby and can extend easily.
 
+## License
+
+The MIT License
+
+## Termtter Team
 
