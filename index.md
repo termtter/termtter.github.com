@@ -29,6 +29,6 @@ todo.
 
 ## Source
 
-[http://github.com/termtter/termtter](http://github.com/termtter/termtter)
+* [github.com/termtter/termtter](http://github.com/termtter/termtter)
 
 

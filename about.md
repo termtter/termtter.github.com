@@ -1,5 +1,11 @@
-About
+---
+layout: default
+title: Termtter -About-
+---
 
-Termtter はターミナルベースの Twitter クライアントです。
-Ruby で書かれていて、容易に拡張できるのが特徴です。
+# About
+
+Termtter is a Terminal based Twitter client.
+It is written by Ruby and can extend easily.
+
 
