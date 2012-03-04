@@ -3,28 +3,32 @@ layout: default
 title: Termtter -Top-
 ---
 
-Home
+# Home
 
 Termtter is a Terminal based Twitter client.
 
 Get Started
 
-Install:
+## Install:
 
-% sudo gem install termtter
-Run:
+    % gem install termtter
 
-% termtter
-Screenshots
+## Run:
+
+    % termtter
+
+## Screenshots
 
 
 
-Documentation
+## Documentation
 
-Installation
-Configuration
-Writing Plugins
-Source
+* [Installation](./install.html)
+* [Configuration](./config.html)
+* [Writing Plugins](plugins.html)
 
-http://github.com/termtter/termtter
+## Source
+
+[http://github.com/termtter/termtter](http://github.com/termtter/termtter)
+
 
