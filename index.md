@@ -19,7 +19,7 @@ Termtter is a terminal-based Twitter client.
 
 ## Screenshots
 
-todo.
+![termtter screenshot](./img/termtter.png)
 
 ## Documentation
 
