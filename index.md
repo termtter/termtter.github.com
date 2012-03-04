@@ -23,9 +23,9 @@ todo.
 
 ## Documentation
 
-* [Installation](./install.html)
-* [Configuration](./config.html)
-* [Writing Plugins](plugins.html)
+* [Installation](./install)
+* [Configuration](./config)
+* [Writing Plugins](plugins)
 
 ## Source
 
