@@ -1,27 +1,39 @@
-Installation
+# How to Install
 
-インストール方法
+Termtter is available as rubygems.
 
-gem でインストールできます。
+Installing termtter is as easy as typing:
 
-sudo gem install termtter
-Mac の場合
+    gem install termtter
 
-Mac 標準の ruby は readline がうまく機能しないケースがあるので MacPorts の ruby を使った方が良いです。
-MacPorts の ruby は以下のようにしてインストールします。
+## for Mac OSX
 
-sudo port install ruby
-Windows の場合
+Termtter often does not work on pre-installed Ruby on OSX(Maybe libreadline problem).
 
-よくわかりません。
+In that case, you need to install Ruby by MacPorts or Homebrew.
 
-最新版を使う
+### MacPorts:
 
-Github からソースを取ってきます。
+    % sudo port install ruby
 
-git clone git://github.com/termtter/termtter.git
-取ってきたソースから直接起動するには run_termtter.rb を実行します。
+### Homebrew
 
-cd termtter
-./bin/termtter
+    % brew install readline
+    % brew install ruby
+
+
+## for Windows
+
+I can't figure out.
+
+## for Developers
+
+You can get the latest version (not stable) from GitHub.
+
+    % git clone git://github.com/termtter/termtter.git
+
+Execute latest version use ./bin/termtter:
+
+    % cd termtter
+    % ./bin/termtter
 
