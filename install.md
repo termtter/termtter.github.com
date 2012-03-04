@@ -1,3 +1,8 @@
+---
+layout: default
+title: Termtter -Install-
+---
+
 # How to Install
 
 Termtter is available as rubygems.
