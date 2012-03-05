@@ -21,7 +21,7 @@ for example:
 
     # Call from Initilization.
     Termtter::Client.init do |t|
-      # You can need use plugin
+      # You can need use plugins
       t.plug 'growl'
       ... 
     end
