@@ -5,8 +5,8 @@ title: Termtter -Plugin-
 
 # Writing Plugins
 
-自分で作ったプラグインをロードするには ~/.termtter/plugins ディレクトリにファイルを配置し、
-設定ファイル ~/.termtter/config に以下のような設定を追加します。
+Put your own plugin file under ~/.termtter/plugins and add the following lines
+to load it.
 
     ...
     Termtter::Client.init do |t|
@@ -18,48 +18,45 @@ title: Termtter -Plugin-
 
 ## Command
 
-fib コマンドの例:
+An example with fib plugin:
 
-コマンドの登録には Termtter::Client.register_command メソッドを使います。
+Use Termtter::Client.register\_command method to add a new command.
 
     Termtter::Client.register_command(
-      :name => :fib,
-      :exec => lambda {|arg|
+      name: :fib,
+      exec: lambda {|arg|
         n = arg.to_i
         text = "fib(#{n}) = #{fib n}"
         Termtter::API.twitter.update(text)
         puts "=> " << text
-      }
-    )
+      })
 
 ## Hook
 
-update コマンドで ERB を使えるようにするためのフックの例:
+An example of a hook to make ERB available in update command:
 
-フックの登録には Termtter::Client.register_hook メソッドを使います。
+Use Termtter::Client.register\_hook method to add a hook.
 
     require 'erb'
     
     Termtter::Client.register_hook(
-      :name => :erb,
-      :point => :modify_arg_for_update,
-      :exec => lambda {|cmd, arg|
+      name: :erb,
+      point: :modify_arg_for_update,
+      exec: lambda {|cmd, arg|
         ERB.new(arg).result(binding)
-      }
-    )
+      })
 
 
 ## Filter
 
-protected にしているユーザーを非表示にするためのフィルタの例:
+An example of a filter for hiding protected users:
 
-フィルタはフックの一種です。普通のフックと同じように Termtter::Client.register_hook メソッドで登録します。
+A filter is a kind of a hook; use Termtter::Client.register\_hook just like adding a hook.
 
     Termtter::Client.register_hook(
-      :name => :protected_filter,
-      :point => :filter_for_output,
-      :exec => lambda { |statuses, event|
-        statuses.select { |s| !s.user.protected }
-      }
-    )
+      name: :protected_filter,
+      point: :filter_for_output,
+      exec: lambda {|statuses, event|
+        statuses.reject {|s| s.user.protected }
+      })
 
